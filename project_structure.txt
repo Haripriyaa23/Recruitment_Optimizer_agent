@@ -1,0 +1,40 @@
+.env
+.idea/
+  .gitignore
+  inspectionProfiles/
+    profiles_settings.xml
+    Project_Default.xml
+  misc.xml
+  modules.xml
+  Recruitment-optimizer-agent.iml
+  workspace.xml
+agents/
+  candidates.db
+  cv_faiss_index
+  cv_metadata.pkl
+  cv_parser_2.py
+  embed_cv.py
+  embed_jd.py
+  jd_faiss_index
+  jd_metadata.pkl
+  jd_summarizer.py
+  jd_summarizer_FAISS.py
+  match_candidates.py
+  __pycache__/
+    cv_parser_2.cpython-312.pyc
+    embed_jd.cpython-312.pyc
+app.py
+candidates.db
+code_structure.py
+database.py
+main.py
+match_score.py
+poetry.lock
+pyproject.toml
+sample resume.pdf
+tools.py
+view_db.py
+__pycache__/
+  database.cpython-312.pyc
+  match_score.cpython-312.pyc
+  tools.cpython-312.pyc
