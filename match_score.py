@@ -3,7 +3,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # 🔍 Load your model (you can switch to deepseek-embedding later)
-model = SentenceTransformer('all-MiniLM-L6-v2')  # lightweight & fast
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')  # lightweight & fast
 
 
 def compute_embedding(text):
