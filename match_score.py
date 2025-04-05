@@ -1,11 +1,9 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-
-# 🔍 Load your model (you can switch to deepseek-embedding later)
 import os
-from sentence_transformers import SentenceTransformer
 
+# ✅ Load model from local path if available
 model_path = './local_model'
 
 if os.path.exists(model_path):
@@ -16,9 +14,8 @@ else:
     model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 
 
-
 def compute_embedding(text):
-    return model.encode([text], convert_to_tensor=True)
+    return model.encode([text], convert_to_numpy=True)
 
 
 def calculate_match_score(jd_text, resume_text):
