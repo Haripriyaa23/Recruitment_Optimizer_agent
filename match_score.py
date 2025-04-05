@@ -3,7 +3,18 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # 🔍 Load your model (you can switch to deepseek-embedding later)
-model = SentenceTransformer('paraphrase-MiniLM-L3-v2')  # lightweight & fast
+import os
+from sentence_transformers import SentenceTransformer
+
+model_path = './local_model'
+
+if os.path.exists(model_path):
+    print(f"✅ Loading model from local path: {model_path}")
+    model = SentenceTransformer(model_path)
+else:
+    print("🌐 Local model not found. Falling back to online model...")
+    model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+
 
 
 def compute_embedding(text):
