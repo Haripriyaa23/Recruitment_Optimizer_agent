@@ -15,7 +15,8 @@ dependencies = [
     "fitz (>=0.0.1.dev2,<0.0.2)",
     "streamlit (>=1.44.1,<2.0.0)",
     "langchain-ollama (>=0.3.0,<0.4.0)",
-    "pdf2image (>=1.17.0,<2.0.0)"
+    "pdf2image (>=1.17.0,<2.0.0)",
+    "pytesseract (>=0.3.13,<0.4.0)"
 ]
 
 
